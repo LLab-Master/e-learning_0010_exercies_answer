@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}add_emp1{% endblock %}
+{% block content %}
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>名前</th>
+            <th>生年月日</th>
+            <th>部署</th>
+        </tr>
+        <tr>
+            <td>{{ object.id }}</td>
+            <td>{{ object.name }}</td>
+            <td>{{ object.birthday }}</td>
+            <td>{{ object.dept }}</td>
+        </tr>
+    </table>
+{% endblock %}

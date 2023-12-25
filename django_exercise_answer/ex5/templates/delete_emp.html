@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}delete_emp{% endblock %}
+{% block content %}
+    <table border="1">
+        <tr>
+            <th>名前</th>
+            <th>生年月日</th>
+            <th>部署</th>
+        </tr>
+        <tr>
+            <td>{{ object.name }}</td>
+            <td>{{ object.birthday }}</td>
+            <td>{{ object.dept }}</td>
+        </tr>
+    </table>
+    <form method="post">
+        {% csrf_token %}
+        <p>
+            <input type="submit" value="削除します">
+        </p>
+    </form>
+
+{% endblock %}

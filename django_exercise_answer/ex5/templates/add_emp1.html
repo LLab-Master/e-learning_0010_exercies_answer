@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}add_emp1{% endblock %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <table>
+            <p>{{ form }}</p>
+        </table>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+{% endblock %}

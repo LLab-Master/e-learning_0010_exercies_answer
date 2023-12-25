@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+input1
+{% endblock %}
+
+{% block content %}
+<form action="{% url 'ex3:show1' %}" method="post">
+    {% csrf_token %}
+    <p><input type="text" name='inp'></p>
+    <p><input type="submit"></p>
+</form>
+{% endblock %}
